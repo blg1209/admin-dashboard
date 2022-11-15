@@ -7,6 +7,9 @@
   img{
     width: 20px;
   }
+  h1 img{
+    width: 40px;
+  }
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -48,6 +51,9 @@
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
 }
+ul{
+    list-style: none;
+}
 button{
     font-weight:bold;
     color: #FFFFFF;
@@ -65,10 +71,38 @@ input{
     background-color: #00BFFF;
     grid-column: 1/2;
     grid-row: 1/3;
+    padding: 15px;
 }
-.sidebar-area{
+.menu{
     display: flex;
+    flex-direction: column;
 }
+.sidebar h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.sidebar li{
+    display: flex;
+    align-items: center
+}
+li img{
+    margin-right: 20px;
+}
+
+.sidebar .menu :nth-child(6){
+margin-bottom: 40px;
+}
+
+
+
+/* BEGIN MAIN CONTENT */
+
 .main-content{
     background-color: #F8F8F8;
 }

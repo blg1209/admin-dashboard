@@ -8,7 +8,8 @@
     width: 20px;
   }
   h1 img{
-    width: 40px;
+    width: 50px;
+    padding-right: 15px;
   }
 .container{
     display: grid;
@@ -28,11 +29,28 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
-.header-top .header-top-right{
+.header-top-left{
+    display: flex;
+    padding-left: 30px;
+}
+.header-top-left img{
+    padding-right: 30px;
+}
+#search{
+    border-radius: 15px;
+    border: none;
+    background-color: #F0F0F0;
+    padding: 8px;
+    max-width: 600px;
+    width: 100%;
+}
+.header-top-right{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 015px;
+    gap: 45px;
+    padding-right: 88px;
+    font-size: 20px;
 }
 .header-bottom{
     display: grid;
@@ -43,8 +61,11 @@
     grid-template-columns: 40px 1fr;
     gap: 10px;
 }
+.header-bottom-left-right{
+    padding-left: 10px;
+}
 .header-bottom-left img{
-    width: 40px;
+    width: 50px;
 }
 .header-buttons ul{
     display: grid;
@@ -63,10 +84,7 @@ button{
     padding: 10px 40px;
     cursor: pointer;
 }
-input{
-    max-width: 500px;
-    width: 100%;
-}
+
 .sidebar{
     background-color: #00BFFF;
     grid-column: 1/2;
@@ -85,14 +103,19 @@ input{
 .sidebar ul{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
+    margin-top: 40px;
+    padding-left: 10PX;
 }
 .sidebar li{
     display: flex;
-    align-items: center
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
 }
 li img{
     margin-right: 20px;
+    width:30px;
 }
 
 .sidebar .menu :nth-child(6){
